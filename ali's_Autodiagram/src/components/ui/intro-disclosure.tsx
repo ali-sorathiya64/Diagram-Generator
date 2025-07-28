@@ -2,14 +2,14 @@
 
 import * as React from "react"
 import Image from "next/image"
-import {
+import {Easing,
   AnimatePresence,
   motion,
   useAnimation,
   type PanInfo,
 } from "framer-motion"
 import { CheckIcon, ExternalLinkIcon } from "lucide-react"
-import { easeInOut } from "framer-motion";
+// import { easeInOut } from "framer-motion";
 
 import { cn } from "@/lib/utils"
 import { AspectRatio } from "@/components/ui/aspect-ratio"
@@ -79,14 +79,20 @@ const fadeInScale = {
   initial: { opacity: 0, scale: 0.95 },
   animate: { opacity: 1, scale: 1 },
   exit: { opacity: 0, scale: 0.95 },
-  transition: { duration: 0.2, ease: "easeInOut" } 
+  transition: { 
+    duration: 0.2, 
+    ease: "easeInOut" as Easing 
+  }
 }
 
 const slideInOut = (direction: 1 | -1) => ({
   initial: { opacity: 0, x: 20 * direction },
   animate: { opacity: 1, x: 0 },
   exit: { opacity: 0, x: -20 * direction },
-  transition: { duration: 0.3, ease: "easeInOut" }
+  transition: { 
+    duration: 0.3, 
+    ease: "easeInOut" as Easing 
+  }
 })
 const hoverScale = {
   whileHover: { scale: 1.01 },
@@ -106,10 +112,10 @@ function StepPreview({ step, direction }: { step: Step; direction: 1 | -1 }) {
   }, [controls, step])
 
   return (
-    <motion.div
-      {...slideInOut(direction)}
-      className="relative h-full w-full   overflow-hidden rounded-sm rounded-rb-lg rounded-tl-xl ring-2 ring-black/10 dark:ring-black/10 dark:ring-offset-black ring-offset-8"
-    >
+   <motion.div
+  {...slideInOut(direction)}
+  className="relative h-full w-full overflow-hidden rounded-sm rounded-rb-lg rounded-tl-xl ring-2 ring-black/10 dark:ring-black/10 dark:ring-offset-black ring-offset-8"
+>
       {step.media ? (
         <div className="relative bg-black h-full w-full">
           <motion.div
