@@ -9,6 +9,7 @@ import {
   type PanInfo,
 } from "framer-motion"
 import { CheckIcon, ExternalLinkIcon } from "lucide-react"
+import { easeInOut } from "framer-motion";
 
 import { cn } from "@/lib/utils"
 import { AspectRatio } from "@/components/ui/aspect-ratio"
@@ -78,7 +79,7 @@ const fadeInScale = {
   initial: { opacity: 0, scale: 0.95 },
   animate: { opacity: 1, scale: 1 },
   exit: { opacity: 0, scale: 0.95 },
-  transition: { duration: 0.2, ease: "easeOut" } 
+  transition: { duration: 0.2, ease: "easeInOut" } 
 }
 
 const slideInOut = (direction: 1 | -1) => ({
