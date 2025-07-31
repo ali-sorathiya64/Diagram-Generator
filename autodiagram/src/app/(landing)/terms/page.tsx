@@ -6,7 +6,7 @@ export default function TermsAndConditions() {
         <p className="text-gray-600">Effective Date: 09 Feb 2025</p>
         
         <div className="mt-8">
-          <p>Welcome to AutoDiagram! By accessing and using our website, located at <a href="https://www.autodiagram.com/" target="_blank" rel="noopener noreferrer">https://www.autodiagram.com/</a>, you agree to comply with and be bound by the following terms and conditions of use. Please read these terms carefully.</p>
+          <p>Welcome to AutoDiagram! By accessing and using our website, located at <a href="#" target="_blank" rel="noopener noreferrer">https://www.autodiagram.com/</a>, you agree to comply with and be bound by the following terms and conditions of use. Please read these terms carefully.</p>
         </div>
 
         <h2 className="mt-8">1. Acceptance of Terms</h2>

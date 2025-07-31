@@ -10,7 +10,7 @@ export default function PrivacyPolicy() {
         <div className="mt-8">
           <p>This Privacy Notice for AutoDiagram (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;), describes how and why we might access, collect, store, use, and/or share (&quot;process&quot;) your personal information when you use our services (&quot;Services&quot;), including when you:</p>
           <ul>
-            <li>Visit our website at <a href="https://www.autodiagram.com/" target="_blank" rel="noopener noreferrer">https://www.autodiagram.com/</a>, or any website of ours that links to this Privacy Notice</li>
+            <li>Visit our website at <a href="#/" target="_blank" rel="noopener noreferrer"></a>, or any website of ours that links to this Privacy Notice</li>
             <li>Engage with us in other related ways, including any sales, marketing, or events</li>
           </ul>
         </div>
