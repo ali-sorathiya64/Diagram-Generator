@@ -8,7 +8,7 @@
     "resolveJsonModule": true,
     "moduleDetection": "force",
     "isolatedModules": true,
-
+   "types": ["framer-motion"],
     /* Strictness */
     "strict": true,
     "noUncheckedIndexedAccess": true,
